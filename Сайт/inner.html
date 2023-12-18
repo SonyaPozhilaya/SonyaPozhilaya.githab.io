@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item border border_light">
+                <a href="inner2.html" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item border border_light">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+              <li class="menu__item border border_light">
+                <a href="index.html" class="menu__link">Главная</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title" id="juice">Соки:</h2>
+        <div class="products__inner">
+          <div class="products__item">
+            <img id="original" src="images/carrotApple.jpg" class="products__item-img"
+              onmouseover="changeImage1()"
+              onmouseout="restoreImage1()"
+            />
+            <script>
+              function changeImage1() {
+                document.getElementById("original").src = "images/сок 1.png";
+              }
+
+              function restoreImage1() {
+                document.getElementById("original").src =
+                  "images/carrotApple.jpg";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/carrotApple.jpg" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Морковь-яблоко</span>
+          </div>
+
+          <div class="products__item">
+            <img id="original1" src="images/pear.png" class="products__item-img"
+              onmouseover="changeImage2()"
+              onmouseout="restoreImage2()"
+            />
+            <script>
+              function changeImage2() {
+                document.getElementById("original1").src = "images/сок 2.png";
+              }
+
+              function restoreImage2() {
+                document.getElementById("original1").src =
+                  "images/pear.png";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/pear.png" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Груша-мята</span>
+          </div>
+          <div class="products__item">
+            <img id="original2" src="images/strowberyApple.png" class="products__item-img"
+              onmouseover="changeImage3()"
+              onmouseout="restoreImage3()"
+            />
+            <script>
+              function changeImage3() {
+                document.getElementById("original2").src = "images/сок 3.png";
+              }
+
+              function restoreImage3() {
+                document.getElementById("original2").src =
+                  "images/strowberyApple.png";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/strowberyApple.png" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Клубника-яблоко</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title" id="jam">Варенья :</h2>
+        <div class="products__inner">
+          <div class="products__item">
+            <img id="originalv" src="images/rasberry.jpg" class="products__item-img"
+              onmouseover="changeImagev()"
+              onmouseout="restoreImagev()"
+            />
+            <script>
+              function changeImagev() {
+                document.getElementById("originalv").src = "images/варенье.png";
+              }
+
+              function restoreImagev() {
+                document.getElementById("originalv").src =
+                  "images/rasberry.jpg";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/rasberry.jpg" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Малина</span>
+          </div>
+
+          <div class="products__item">
+            <img id="originalv2" src="images/applej.jpg" class="products__item-img"
+              onmouseover="changeImagev2()"
+              onmouseout="restoreImagev2()"
+            />
+            <script>
+              function changeImagev2() {
+                document.getElementById("originalv2").src = "images/applejam.png";
+              }
+
+              function restoreImagev2() {
+                document.getElementById("originalv2").src =
+                  "images/applej.jpg";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/rasberry.jpg" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Яблоко</span>
+          </div>
+
+          <div class="products__item">
+            <img id="originalv3" src="images/strowberryj.jpg" class="products__item-img"
+              onmouseover="changeImagev3()"
+              onmouseout="restoreImagev3()"
+            />
+            <script>
+              function changeImagev3() {
+                document.getElementById("originalv3").src = "images/вар клуб.png";
+              }
+
+              function restoreImagev3() {
+                document.getElementById("originalv3").src =
+                  "images/strowberryj.jpg";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/rasberry.jpg" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Клубника</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title" id="chips">Сушенные фрукты :</h2>
+        <div class="products__inner">
+          <div class="products__item">
+            <img id="originals1" src="images/apllechips.jpg" class="products__item-img"
+              onmouseover="changeImages1()"
+              onmouseout="restoreImages1()"
+            />
+            <script>
+              function changeImages1() {
+                document.getElementById("originals1").src = "images/суш яблоки.png";
+              }
+
+              function restoreImages1() {
+                document.getElementById("originals1").src =
+                  "images/apllechips.jpg";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/rasberry.jpg" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Яблоко</span>
+          </div>
+
+          <div class="products__item">
+            <img id="originals2" src="images/сеж абр.jpg" class="products__item-img"
+              onmouseover="changeImages2()"
+              onmouseout="restoreImages2()"
+            />
+            <script>
+              function changeImages2() {
+                document.getElementById("originals2").src = "images/абрики.jpg";
+              }
+
+              function restoreImages2() {
+                document.getElementById("originals2").src =
+                  "images/сеж абр.jpg";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/rasberry.jpg" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Абрикос</span>
+          </div>
+
+          <div class="products__item">
+            <img id="originals3" src="images/сливка.jpg" class="products__item-img"
+              onmouseover="changeImages3()"
+              onmouseout="restoreImages3()"
+            />
+            <script>
+              function changeImages3() {
+                document.getElementById("originals3").src = "images/черносливка.jpg";
+              }
+
+              function restoreImages3() {
+                document.getElementById("originals3").src =
+                  "images/сливка.jpg";
+              }
+            </script>
+            <!-- <img class="products__item-img"
+              src="images/rasberry.jpg" alt="Банки, наполненные соком"/>              -->
+            <span class="products__item-title">Слива</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
